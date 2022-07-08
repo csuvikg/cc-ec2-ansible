@@ -1,0 +1,11 @@
+# local files
+key.pem
+inventory.ini
+
+# terraform files
+.terraform/
+.terraform.lock.hcl
+
+# idea files
+.idea/
+*.iml
