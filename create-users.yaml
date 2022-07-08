@@ -1,0 +1,14 @@
+- name: Create users
+  hosts: all
+
+  tasks:
+    - name: Add users
+      become: true
+      user:
+        name: gabor.csuvik
+    - name: Add keys
+      become: true
+      authorized_key:
+        user: gabor.csuvik
+        key: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+        state: present
