@@ -3,7 +3,7 @@ terraform {
       bucket = "codecool-sysadmin-tfstate"
       key    = "ec2-ansible-test/terraform.tfstate"
       region = "eu-central-1"
-      dynamodb_table = "codecool-sysadmin-tfstate-ec2-ansible-test"
+      dynamodb_table = "codecool-sysadmin-tfstate"
       profile = "cc-sysadmin-4"
     }
 
